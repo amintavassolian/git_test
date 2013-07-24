@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestLogin</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="pac_hint">Personal Access Code</string>
+    <string name="remember_my_card_number_caption">Remember my card number</string>
+    <string name="contact_us_caption">Contact Us</string>
+    <string name="locator_caption">Locator</string>
+    <string name="rates_caption">Rates</string>
+    <string name="website_caption">Website</string>
+    <string name="privacy_and_security"><u>Privacy &amp; Security</u></string>
+    <string name="terms_and_conditions"><u>Terms &amp; Conditions</u></string>
+
+</resources>

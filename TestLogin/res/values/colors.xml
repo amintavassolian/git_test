@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#666666</color>
+    <color name="dark_grey">#333333</color>
+    <color name="green">#A4D366</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="bg_main">#00457C</color>
+    <color name="bg_help_header">#002E5F</color>
+    <color name="bg_quick_view">#002E5F</color>
+    
+    <!-- colors used for the toolbar gradient -->
+    <color name="lightBlue">#7E8FAC</color>
+    <color name="mediumBlue">#4B628B</color>
+    <color name="darkBlue">#182D63</color>
+    
+    <!-- colors used for toolbar button gradient -->
+    <color name="toolbar_button_top">#5D6A82</color>
+    <color name="toolbar_button_middle">#2D3C5B</color>
+    <color name="toolbar_button_bottom">#1A2949</color>
+    
+    <!-- colors used for the list gradient (not selected) -->
+    <color name="listReg_color_top">#425081</color>
+    <color name="listReg_color_middle">#2B3560</color>
+    <color name="listReg_color_bottom">#171D45</color>
+    
+    <!-- colors used for the list item gradient (selected) -->
+    <color name="listSel_color_top">#223061</color>
+    <color name="listSel_color_middle">#0B1540</color>
+    <color name="listSel_color_bottom">#000025</color>
+    
+    <color name="account_background">#162B62</color>
+    
+    <!-- colors used for a lighter background -->
+    <color name="lightbg_color_top">#F5F7FB</color>
+    <color name="lightbg_color_middle">#DCE5F2</color>
+    <color name="lightbg_color_bottom">#A3B2D9</color>
+    
+    <!-- colors used for selection button gradients -->
+    <color name="selector_color_top">#AFB0B0</color>
+    <color name="selector_color_middle">#B8BBBC</color>
+    <color name="selector_color_bottom">#C1C4C7</color>
+    
+    <!-- colors used for help fragment's ok button gradient -->
+    <color name="ok_button_color_top">#ADB5CA</color>
+    <color name="ok_button_color_middle">#3E578A</color>
+    <color name="ok_button_color_bottom">#7C9BCA</color>
+    <color name="ok_button_outline">#162B62</color>
+    
+    <!-- colors used for the help fragment's background gradient -->
+    <color name="help_frag_bg_top">#222B46</color>
+    <color name="help_frag_bg_middle">#425485</color>
+    <color name="help_frag_bg_bottom">#222B46</color>
+    
+    <!-- colors used for button overlay gradient -->
+    <color name="overlay_gradient_bottom">#55606060</color>
+    <color name="overlay_gradient_middle">#55303030</color>
+    <color name="overlay_gradient_top">#55000000</color>
+    
+    <!-- colors used for solid overlays --> 
+    <color name="overlay_button_press">#6600E5FF</color>
+    
+    <!-- gradient colors used for select buttons that are filled with data -->
+    <color name="overlay_gradient_filled_top">#AA1DFD23</color>
+    <color name="overlay_gradient_filled_middle">#AA31fb36</color>
+    <color name="overlay_gradient_filled_bottom">#AA0DE513</color>
+    
+    
+    
+</resources>

@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- LOGO -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/affinity_cu_logo_white" />
+    </LinearLayout>
+    <!-- QUICK VIEW -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_orange_light" >
+    </LinearLayout>
+    <!-- USER INPUT -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <!-- CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/mCardNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:hint="@string/card_number_hint"
+                android:inputType="number"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/mCardInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_info_button" />
+        </LinearLayout>
+        <!-- PAC -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/mPAC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:gravity="center"
+                android:hint="@string/pac_hint"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/mPACInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_info_button" />
+        </LinearLayout>
+        <!-- REMEMBER CHECK -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/mRememberCardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="@string/remember_my_card_number_caption"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ICON BUTTONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <!-- CONTACT US -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/mContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_contact_us" />
+
+            <TextView
+                style="@style/text_small_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/contact_us_caption" />
+        </RelativeLayout>
+        <!-- LOCATOR -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/mLocator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_locator" />
+
+            <TextView
+                style="@style/text_small_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/locator_caption" />
+        </RelativeLayout>
+        <!-- RATES -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/mRates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_rates" />
+
+            <TextView
+                style="@style/text_small_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/rates_caption" />
+        </RelativeLayout>
+        <!-- WEBSITE -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/mWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_website" />
+
+            <TextView
+                style="@style/text_small_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/website_caption" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- SEPERATOR -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/green" />
+    <!-- FOOTER -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/mPrivacy"
+            style="@style/text_small_white"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:text="@string/privacy_and_security" />
+
+        <Button
+            android:id="@+id/mTerms"
+            style="@style/text_small_white"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:text="@string/terms_and_conditions" />
+    </RelativeLayout>
+
+</LinearLayout>

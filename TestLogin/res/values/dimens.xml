@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Text size for all devices with normal screen size -->
+    <dimen name="header_font_size">20sp</dimen>
+    <dimen name="font_size">18sp</dimen>
+    <dimen name="small_font_size">14sp</dimen>
+    
+    <!-- Toolbar Button padding for normal screen size -->
+    <dimen name="toolbar_button_padding_left">7dp</dimen>
+    <dimen name="toolbar_button_padding_right">7dp</dimen>
+    <dimen name="toolbar_button_padding_top">5dp</dimen>
+    <dimen name="toolbar_button_padding_bottom">5dp</dimen>
+	
+</resources>
